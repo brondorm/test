@@ -1,0 +1,5 @@
+python: 12406784 bytes
+-— 14.25476861000061 seconds —-
+с++: 0.371 sec 400kbytes
+java: 111 miliseconds 2884392 bytes
+assembler: 0.18 sec(s), Memory: 348 kilobyte(s)

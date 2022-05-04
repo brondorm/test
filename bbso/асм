@@ -1,0 +1,27 @@
+section .data
+f dd 0
+b dd 3
+c dd 3
+iter dd 100000000
+i dd 1
+
+	section .text
+	global _start
+_start:
+
+	mov edx, 1
+	mov ebx, dword[b]
+	add ebx, ebx
+	add ebx, dword[c]
+	mov eax, 0
+	mov ecx, dword[iter]
+
+for: add eax, ebx
+	sub eax, edx
+	inc edx
+	loop for
+
+exit:
+	mov eax, 1
+	mov ebx, 0
+	int 0x80
